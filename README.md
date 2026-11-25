@@ -89,7 +89,7 @@ Sign in with `demo_student` / `password123` (or `demo_owner_kandy` for the owner
 ## Tests
 
 ```bash
-npm test          # 39 Jest tests
+npm test          # 42 Jest tests
 npm run typecheck # tsc --noEmit (strict, noUncheckedIndexedAccess)
 npm run lint
 ```
