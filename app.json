@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "BoardingFinder",
+    "slug": "boardingfinder-mobile",
+    "scheme": "boardingfinder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.naweedh.boardingfinder"
+    },
+    "android": {
+      "package": "com.naweedh.boardingfinder",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "color": "#2F6DB5"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "BoardingFinder uses your location to show rooms near you and to pin a new listing on the map."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "BoardingFinder uses the camera so you can photograph a room for your listing.",
+          "photosPermission": "BoardingFinder lets you attach room photos from your library."
+        }
+      ],
+      "expo-image"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
